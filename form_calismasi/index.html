@@ -11,38 +11,80 @@
   <body>
     <div class="container">
       <header>
-        <img src="./img/phone.png" alt="" width="100" /> <br>
-       <h1>Başvuru Formu</h1> 
+        <img src="./img/phone.png" alt="" width="100" /> <br />
+        <h1>Başvuru Formu</h1>
       </header>
-      <br>
+      <br />
       <section>
         <form action="">
-        <div>
+          <div>
             <label for="ad">Ad-Soyad:</label>
-            <input type="text" name="" id="ad" placeholder="Ad-Soyad giriniz."/>
-        </div>
-        <div>
+            <input
+              type="text"
+              name=""
+              id="ad"
+              placeholder="Ad-Soyad giriniz."
+            />
+          </div>
+          <div>
             <label for="email">E-posta:</label>
-            <input type="email" name="e-posta" id="email" >
-        </div>
-        <div>
+            <input type="email" name="e-posta" id="email" />
+          </div>
+          <div>
             <label for="tel">Telefon No:</label>
-            <input type="tel" name="Telefon" id="tel" pattern="[1-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="5xx-xxx-xx-xx">
-        </div>
-        <div>
+            <input
+              type="tel"
+              name="Telefon"
+              id="tel"
+              pattern="[1-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              placeholder="5xx-xxx-xx-xx"
+            />
+          </div>
+          <div>
             <label for="dtarih">Doğum Tarihi</label>
-            <input type="date" name="DogumTarihi" id="dtarih" max="2006-01-01">
-        </div>
-        <div>
+            <input
+              type="date"
+              name="DogumTarihi"
+              id="dtarih"
+              max="2006-01-01"
+            />
+          </div>
+          <div>
             <label for="Cinsiyet">Cinsiyet:</label>
-            <input type="radio" name="cinsiyet" id="kadın" value="kadın">
+            <input type="radio" name="cinsiyet" id="kadın" value="kadın" />
             <label for="kadın">Kadın</label>
-            <input type="radio" name="cinsiyet" id="erkek" value="erkek">
+            <input type="radio" name="cinsiyet" id="erkek" value="erkek" />
             <label for="erkek">Erkek</label>
-        </div>
+          </div>
+          <br> 
+          <div>
+            <label for="ulke">Ülke:</label>
+            <input type="text" id="ulke" list="ulkelist" />
+            <datalist id="ulkelist">
+              <option value="Türkiye"></option>
+              <option value="ABD"></option>
+              <option value="Almanya"></option>
+            </datalist>
+          </div>
+          <fieldset>
+            <legend>Deneyim ve Yetenekler:</legend>
+            <div>
+              <label for="kodlama">Kodlama</label>
+              <input type="checkbox" name="yetenek" id="kodlama">
+              <label for="tasarim">Tasarım</label>
+              <input type="checkbox" name="yetenek" id="tasarim">
+              <label for="pazarlama">Pazarlama</label>
+              <input type="checkbox" name="yetenek" id="pazarlama">
+            </div>
+            <br>
+            <div>
+              <label for="yorum">Deneyimler:</label>
+              <textarea name="deneyim" id="yorum"></textarea>
+            </div>
+          </fieldset>
           
-        <input type="submit" value="Gönder">
 
+          <input type="submit" value="Gönder" />
         </form>
       </section>
     </div>
