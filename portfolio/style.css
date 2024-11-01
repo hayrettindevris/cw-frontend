@@ -112,3 +112,32 @@ section {
   font-family: "Orbitron", sans-serif;
   line-height: 1.3;
 }
+
+.info {
+  margin-top: 2rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+}
+
+.social-media {
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 2rem;
+  /* justify-content: space-evenly; */
+}
+
+.social-media a {
+  font-size: 3rem;
+  color: var(--main-color);
+  margin: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social-media a:hover {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 3rem var(--main-color);
+}
