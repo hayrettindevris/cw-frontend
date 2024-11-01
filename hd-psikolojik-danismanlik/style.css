@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* border: 5px solid green; */
+  height: 100vh;
+}
+
+header {
+  background-image: url(./img/iletisim.jpg);
+  height: 100vh;
+  background-image: url("https://picsum.photos/id/685/600/400?blur=5");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  /* border: 3px solid black; */
+  background-color: beige;
+}
+
+.navbar {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 10px;
+}
+
+.logo img {
+  width: 70px;
+}
+
+span {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  color: rgb(125, 11, 11);
+}
+
+.logoYazi {
+  /* border: 2px solid orange; */
+  font-family: "Playwrite GB S", serif;
+}
+
+nav {
+  /* border: 2px solid black; */
+  /* margin-top: 1rem; */
+}
+
+nav a {
+  /* border: 2px solid fuchsia; */
+  margin: 1rem;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: aquamarine;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  /* border: 2px solid red; */
+  float: inline-start;
+  /* margin-top: 10%; */
+  gap: 3rem;
+}
+
+div img {
+  /* border: 2px solid blue; */
+  margin-left: 10rem;
+  border-radius: 10px;
+  float: inline-start;
+}
+
+.par-buton {
+  font-family: "Playwrite GB S", serif;
+  /* border: 2px solid red; */
+}
+
+.par-buton .par1 {
+  font-family: "Playwrite GB S", serif;
+  opacity: 0.2;
+  font-size: 2rem;
+}
+
+.par-buton .par2 {
+  opacity: 0.4;
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 0.4rem;
+}
