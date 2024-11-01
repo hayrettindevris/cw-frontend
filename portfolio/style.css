@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+/* font-family: "Orbitron", sans-serif;
+font-family: "Victor Mono", monospace;
+font-family: "IBM Plex Mono", monospace;
+font-family: "Comfortaa", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --bg-color: #212a34;
+  --second-bg-color: #353f4e;
+  --text-color: #fff;
+  --main-color: #d80404;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body a {
+  color: var(--text-color);
+}
+
+/*! HEADER */
+
+.header {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  flex-wrap: wrap;
+}
+
+.logo {
+  /* border: 2px solid blue; */
+  font-size: 2rem;
+  color: var(--main-color);
+  font-weight: 600;
+  font-family: "Orbitron", sans-serif;
+}
+
+.navbar {
+  /* border: 2px solid yellow; */
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: var(--main-color);
+}
+
+section {
+  min-height: 100vh;
+  /* sayfam küçülse bile görüntü özelliğim bozulmasın */
+  padding: 0 10rem;
+}
+
+/*! HOME */
+
+.home {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.home-content {
+  /* border: 2px solid yellow; */
+  /* flex 123 gibi de belirtebiliriz ya da width diyerek de flex itemlerimin genişliklerini belirtebiliriz */
+  width: 70%;
+}
+
+.home-img {
+  /* border: 2px solid magenta; */
+  width: 30%;
+}
+
+.home-img img {
+  width: 100%;
+  max-width: 20rem;
+  border-radius: 10%;
+}
+
+.home-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.home-content title {
+}
+
+.home-content .name {
+  color: var(--main-color);
+  font-size: 3rem;
+  font-family: "Orbitron", sans-serif;
+  line-height: 1.3;
+}
