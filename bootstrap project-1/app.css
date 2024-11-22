@@ -1,0 +1,23 @@
+:root{
+    --red: #dc3545;
+}
+
+
+/*! NAVBAR */
+.navbar-nav{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+.navbar .nav-link:hover{
+    color: var(--red)
+}
+/*! CAROUSEL
+/*! ABOUT SELECTION
+/*! INSTRUCTORS
+/*! STUDENT SECTION
+/*! COURSES SECTION
+/*! FOOTER
+/*! BUTTON
