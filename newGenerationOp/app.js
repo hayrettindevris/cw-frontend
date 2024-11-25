@@ -21,3 +21,8 @@
 // console.log(person.name);
 // console.log(person.age);
 
+// const numbers = [1, [2, 3], 4];
+// const [first, [second, third], fourth] = numbers;
+// console.log(second);
+
+function greet({name, age})
