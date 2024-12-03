@@ -1,4 +1,4 @@
-    let firstScore = 0;
+      let firstScore = 0;
       let secondScore = 0;
       let targetScore = 0;
       
