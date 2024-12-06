@@ -41,7 +41,7 @@
       
       resetButton.onclick = function() {
         firstScore = 0;
-        secondScore = 0;
+          secondScore = 0;
         targetScore = 0;
         
         firstScoreElement.textContent = firstScore;

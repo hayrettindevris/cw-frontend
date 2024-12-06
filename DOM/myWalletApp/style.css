@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+.kutuphane {
+  width: 50%;
+  margin: 0 auto;
+}
+.form-bolum {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin: 5px 0;
+}
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.tablo-bolum {
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+.toplam {
+  font-weight: bold;
+}
+.sil-button {
+  color: red;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

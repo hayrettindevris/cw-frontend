@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallet Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="kutuphane">
+        <h1>My Wallet Uygulaması</h1>
+
+        <!-- Harcama Formu -->
+        <div class="form-bolum">
+            <label for="tarih">Tarih</label>
+            <input type="date" id="tarih" value="2024-12-06">
+
+            <label for="harcamaMiktari">Harcama Miktarı</label>
+            <input type="number" id="harcamaMiktari" value="1000">
+
+            <label for="harcamaAlani">Harcama Alanı</label>
+            <select id="harcamaAlani">
+                <option value="Kira">Kira</option>
+                <option value="Fatura">Fatura</option>
+                <option value="Kredi Kartı">Kredi Kartı</option>
+            </select>
+
+            <button onclick="harcamaKaydet()">Kaydet</button>
+        </div>
+
+        <!-- Gelir Ekleme Formu -->
+        <div class="form-bolum">
+            <label for="gelirMiktari">Gelir Miktarı</label>
+            <input type="number" id="gelirMiktari" value="0">
+
+            <button onclick="gelirEkle()">Gelir Ekle</button>
+        </div>
+
+        <!-- Gelir ve Gider Tablosu -->
+        <div class="tablo-bolum">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tarih</th>
+                        <th>Harcama Alanı</th>
+                        <th>Miktar (₺)</th>
+                        <th>İşlem</th>
+                    </tr>
+                </thead>
+                <tbody id="harcamaTablosu">
+                    <!-- Harcama bilgileri buraya eklenecek -->
+                </tbody>
+            </table>
+            <div>
+                <span class="toplam">Geliriniz (₺): </span><span id="gelirMiktariToplam">50.000</span><br>
+                <span class="toplam">Gideriniz (₺): </span><span id="giderMiktariToplam">0</span><br>
+                <span class="toplam">Kalan (₺): </span><span id="kalanMiktari">50.000</span>
+            </div>
+        </div>
+
+        <button onclick="verileriTemizle()">Bilgileri Temizle</button>
+    </div>
+
+
+    <script src="app.js"></script>
+
+
+</body>
+</html>
